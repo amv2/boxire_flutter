@@ -10,10 +10,12 @@ class CustomProductCard extends StatelessWidget {
     Key? key,
     required this.featurePage,
     required this.title,
+    required this.imgUrl,
   }) : super(key: key);
 
   final Widget featurePage;
   String title;
+  String imgUrl;
 
   @override
   Widget build(BuildContext context) {
@@ -26,25 +28,30 @@ class CustomProductCard extends StatelessWidget {
       },
       child: Container(
         width: 350,
-        height: 205,
+        height: 255,
         decoration: BoxDecoration(
           color: Provider.of<ThemeProvider>(context).themeMode == ThemeMode.dark
               ? Colors.grey.shade700
               : Colors.grey.shade200,
           borderRadius: BorderRadius.circular(15),
+          image: DecorationImage(
+            image: AssetImage(imgUrl),
+            fit: BoxFit.cover,
+            opacity: 0.7,
+          ),
         ),
-        child: Column(children: [
-          const SizedBox(height: 40),
-          SizedBox(
-            height: 100,
-            child: Center(
+        child: Center(
+          child: Stack(children: [
+            const SizedBox(height: 40),
+            SizedBox(
+              height: 100,
               child: CustomText(
                 text: title, // max 22 char
-                size: 23,
+                size: 26,
               ),
             ),
-          ),
-        ]),
+          ]),
+        ),
       ),
     );
   }

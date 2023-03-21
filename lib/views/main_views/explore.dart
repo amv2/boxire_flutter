@@ -34,21 +34,25 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 const SizedBox(height: 20),
                 CustomProductCard(
                   title: "Colored Line Tracking",
+                  imgUrl: 'assets/images/colored_lines_preview.jpeg',
                   featurePage: const ColoredLineTracking(),
                 ),
                 const SizedBox(height: 20),
                 CustomProductCard(
                   title: "Route Finding Algorithm",
+                  imgUrl: 'assets/images/route_finding.png',
                   featurePage: const RouteFindingAlgorithm(),
                 ),
                 const SizedBox(height: 20),
                 CustomProductCard(
                   title: "Secure Authentication",
+                  imgUrl: 'assets/images/secure_authentication.webp',
                   featurePage: const SecureAuthentication(),
                 ),
                 const SizedBox(height: 20),
                 CustomProductCard(
                   title: "Wireless Connection",
+                  imgUrl: 'assets/images/wireless_connection.jpg',
                   featurePage: const WirelessConnection(),
                 ),
               ],

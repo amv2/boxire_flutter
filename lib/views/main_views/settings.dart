@@ -35,7 +35,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               children: <Widget>[
                 CustomHeader(headerText: "Settings"),
                 const SizedBox(height: 30),
-                CustomProfile(),
+                const CustomProfile(),
                 const SizedBox(height: 30),
                 CustomMenuItem(
                   prefixIcon: Icons.person,

@@ -1,4 +1,9 @@
+import 'package:boxire_flutter/views/feature_views/line_tracking.dart';
+import 'package:boxire_flutter/views/feature_views/route_finding.dart';
+import 'package:boxire_flutter/views/feature_views/secure_auth.dart';
+import 'package:boxire_flutter/views/feature_views/wireless_connect.dart';
 import 'package:boxire_flutter/widgets/custom_header.dart';
+import 'package:boxire_flutter/widgets/custom_product_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -26,6 +31,26 @@ class _ExploreScreenState extends State<ExploreScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CustomHeader(headerText: "Explore"),
+                const SizedBox(height: 20),
+                CustomProductCard(
+                  title: "Colored Line Tracking",
+                  featurePage: const ColoredLineTracking(),
+                ),
+                const SizedBox(height: 20),
+                CustomProductCard(
+                  title: "Route Finding Algorithm",
+                  featurePage: const RouteFindingAlgorithm(),
+                ),
+                const SizedBox(height: 20),
+                CustomProductCard(
+                  title: "Secure Authentication",
+                  featurePage: const SecureAuthentication(),
+                ),
+                const SizedBox(height: 20),
+                CustomProductCard(
+                  title: "Wireless Connection",
+                  featurePage: const WirelessConnection(),
+                ),
               ],
             ),
           ),

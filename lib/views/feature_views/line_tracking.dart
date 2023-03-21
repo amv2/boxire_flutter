@@ -1,15 +1,16 @@
+import 'package:boxire_flutter/widgets/custom_back_button.dart';
 import 'package:boxire_flutter/widgets/custom_header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class DashboardScreen extends StatefulWidget {
-  const DashboardScreen({super.key});
+class ColoredLineTracking extends StatefulWidget {
+  const ColoredLineTracking({super.key});
 
   @override
-  State<DashboardScreen> createState() => _DashboardScreenState();
+  State<ColoredLineTracking> createState() => _ColoredLineTrackingState();
 }
 
-class _DashboardScreenState extends State<DashboardScreen> {
+class _ColoredLineTrackingState extends State<ColoredLineTracking> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,10 +26,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                CustomHeader(headerText: "Dashboard"),
-                // image of the robot
-                // battery + lock status
-                // color choice
+                CustomBackButton(buttonFunction: () {
+                  Navigator.of(context).pop();
+                }),
+                CustomHeader(headerText: "Colored Line Tracking"),
               ],
             ),
           ),

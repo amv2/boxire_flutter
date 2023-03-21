@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class CustomProfile extends StatelessWidget {
-  CustomProfile({
+  const CustomProfile({
     Key? key,
   }) : super(key: key);
 

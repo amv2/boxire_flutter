@@ -37,7 +37,7 @@ class CustomProductCard extends StatelessWidget {
           image: DecorationImage(
             image: AssetImage(imgUrl),
             fit: BoxFit.cover,
-            opacity: 0.7,
+            opacity: 0.5,
           ),
         ),
         child: Center(

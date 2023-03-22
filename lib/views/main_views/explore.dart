@@ -32,7 +32,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
               children: <Widget>[
                 CustomHeader(headerText: "Explore"),
                 const SizedBox(height: 20),
-                // hi there!
                 CustomProductCard(
                   title: "Colored Line Tracking",
                   imgUrl: 'assets/images/colored_lines_preview.jpeg',
